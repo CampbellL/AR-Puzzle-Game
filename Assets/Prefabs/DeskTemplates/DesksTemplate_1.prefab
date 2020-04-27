@@ -125,6 +125,11 @@ PrefabInstance:
       propertyPath: chairSpots
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8022607362167385585, guid: e4323be7bfea8f745a6bed9d3fb91813,
+        type: 3}
+      propertyPath: id
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4323be7bfea8f745a6bed9d3fb91813, type: 3}
 --- !u!4 &8583324472022030422 stripped
@@ -219,6 +224,11 @@ PrefabInstance:
         type: 3}
       propertyPath: chairSpots
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8022607362167385585, guid: e4323be7bfea8f745a6bed9d3fb91813,
+        type: 3}
+      propertyPath: id
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4323be7bfea8f745a6bed9d3fb91813, type: 3}
@@ -315,6 +325,11 @@ PrefabInstance:
       propertyPath: chairSpots
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8022607362167385585, guid: e4323be7bfea8f745a6bed9d3fb91813,
+        type: 3}
+      propertyPath: id
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4323be7bfea8f745a6bed9d3fb91813, type: 3}
 --- !u!4 &8583324473202725098 stripped
@@ -410,6 +425,11 @@ PrefabInstance:
       propertyPath: chairSpots
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 8022607362167385585, guid: e4323be7bfea8f745a6bed9d3fb91813,
+        type: 3}
+      propertyPath: id
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4323be7bfea8f745a6bed9d3fb91813, type: 3}
 --- !u!4 &8583324473333959039 stripped
@@ -504,6 +524,11 @@ PrefabInstance:
         type: 3}
       propertyPath: chairSpots
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8022607362167385585, guid: e4323be7bfea8f745a6bed9d3fb91813,
+        type: 3}
+      propertyPath: id
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4323be7bfea8f745a6bed9d3fb91813, type: 3}
@@ -695,6 +720,11 @@ PrefabInstance:
       propertyPath: chairSpots
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8022607362167385585, guid: e4323be7bfea8f745a6bed9d3fb91813,
+        type: 3}
+      propertyPath: id
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4323be7bfea8f745a6bed9d3fb91813, type: 3}
 --- !u!4 &8583324473885560729 stripped
@@ -789,6 +819,11 @@ PrefabInstance:
         type: 3}
       propertyPath: chairSpots
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8022607362167385585, guid: e4323be7bfea8f745a6bed9d3fb91813,
+        type: 3}
+      propertyPath: id
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4323be7bfea8f745a6bed9d3fb91813, type: 3}

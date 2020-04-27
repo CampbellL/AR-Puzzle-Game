@@ -4,10 +4,13 @@ public class GridObject : MonoBehaviour
 {
     public bool isSelectable = true;
     public bool isMovable = true;
-    public float xSize = 1f;
     public MeshRenderer mesh;
     public GridTile occupiedTile;
-    
+
+    public int Value { get; protected set; }
+
+    protected bool IsConnected = false;
+
     public void SnapToClosestFromTarget(Vector3 target)
     {
         if (!isMovable) return;
@@ -32,12 +35,44 @@ public class GridObject : MonoBehaviour
         
         if(isMovable) 
             MovementGrid.Instance.ShowGrid();
+        
         mesh.material.SetColor("_Color", Color.red);
     }
 
     public virtual void Deselect()
     {
         MovementGrid.Instance.HideGrid();
-        mesh.material.SetColor("_Color", Color.white);
+        
+        if(IsConnected)
+            mesh.material.SetColor("_Color", Color.green);
+        else
+            mesh.material.SetColor("_Color", Color.white);
+    }
+
+    public virtual void Connect(GridObject other)
+    {
+        IsConnected = true;
+        mesh.material.SetColor("_Color", Color.green);
+    }
+
+    public virtual void Disconnect(GridObject other)
+    {
+        IsConnected = false;
+        mesh.material.SetColor("_Color", Color.red);
+    }
+    
+    public virtual void SetValue(int value)
+    {
+        Value = value;
+    }
+    
+    public void RotateLeft()
+    {
+        transform.Rotate(0, 90, 0);
+    }
+
+    public void RotateRight()
+    {
+        transform.Rotate(0, -90, 0);
     }
 }

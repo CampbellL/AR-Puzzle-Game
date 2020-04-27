@@ -79,7 +79,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3039943761515512224}
-  m_Text: 10
+  m_Text: 0
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -171,7 +171,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSelectable: 1
   isMovable: 1
-  xSize: 2
   mesh: {fileID: 8422446403940922079}
   occupiedTile: {fileID: 0}
   chairSpots: 0

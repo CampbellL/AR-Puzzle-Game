@@ -92,9 +92,9 @@ GameObject:
   - component: {fileID: 1280057255397227416}
   - component: {fileID: 1280057255397227417}
   - component: {fileID: 2805389795173183085}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: LeftRotator
-  m_TagString: Untagged
+  m_TagString: LeftRotator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -186,9 +186,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1280057255422192020}
   - component: {fileID: 1280057255422192021}
-  m_Layer: 5
+  - component: {fileID: 1711799160586347661}
+  m_Layer: 10
   m_Name: RightRotator
-  m_TagString: Untagged
+  m_TagString: RightRotator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -257,6 +258,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1711799160586347661
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280057255422192019}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8374163, y: 0.7517306, z: 0.20000005}
+  m_Center: {x: 0.007003806, y: 0.12413475, z: -0.000000058312544}
 --- !u!1 &1280057255971331924
 GameObject:
   m_ObjectHideFlags: 0

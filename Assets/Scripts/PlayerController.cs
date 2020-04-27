@@ -8,26 +8,35 @@ public class PlayerController : MonoBehaviour
     
     private void Update()
     {
-        if (Input.touchCount > 0)
+        if (Input.touchSupported)
         {
-            var touch = Input.GetTouch(0);
-            
-            if (touch.phase == TouchPhase.Began)
+            if (Input.touchCount > 0)
             {
-                if (_selectedObj != null) _selectedObj.Deselect();
-                
-                var obj = GetSelectableObject(touch);
+                var touch = Input.GetTouch(0);
 
-                if (obj != null)
+                UiManager.Instance.debugText.text = System.Enum.GetName(typeof(TouchPhase), touch.phase);
+
+                if (touch.phase == TouchPhase.Began)
                 {
-                    obj.Select();
+                    var obj = GetSelectableObject(touch);
+
+                    if (obj != null)
+                    {
+                        obj.Select();
+                    }
+
+                    _selectedObj = obj;
                 }
-                
-                _selectedObj = obj;
-            } 
-            else if (touch.phase == TouchPhase.Moved)
-            {
-                if(_selectedObj) MoveSelectedObject(touch);
+                else if (touch.phase == TouchPhase.Moved)
+                {
+                    if (_selectedObj) MoveSelectedObject(touch);
+                }
+
+                /*else if(touch.phase == TouchPhase.Ended || touch.phase == TouchPhase.Canceled)
+                {
+                    if(_selectedObj) _selectedObj.Deselect();
+                    _selectedObj = null;
+                }*/
             }
         }
     }
@@ -39,6 +48,20 @@ public class PlayerController : MonoBehaviour
 
         if (hasHit)
         {
+            if (_selectedObj != null)
+            {
+                if (hit.transform.CompareTag("LeftRotator"))
+                {
+                    _selectedObj.RotateLeft();
+                    return _selectedObj;
+                } 
+                else if (hit.transform.CompareTag("RightRotator"))
+                {
+                    _selectedObj.RotateRight();
+                    return _selectedObj;
+                }
+            }
+            
             var moveObj = hit.transform.parent.GetComponent<GridObject>();
 
             if (moveObj.isSelectable)

@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Tile
+  - Chair
+  - LeftRotator
+  - RightRotator
   layers:
   - Default
   - TransparentFX
