@@ -2,6 +2,7 @@
 
 public class GridChair : GridObject
 {
+    public Transform symbolParent;
     public GameObject rotators;
     
     private bool _rotatorsActive;

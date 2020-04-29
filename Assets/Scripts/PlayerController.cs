@@ -1,16 +1,25 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public float inputDelay = 0.01f;
     public LayerMask selectableLayer;
     public LayerMask movableLayer;
-    private GridObject _selectedObj;
     
+    private float _currentInputDelay;
+    private GridObject _selectedObj;
+
+    private void Start()
+    {
+        _currentInputDelay = inputDelay;
+    }
+
     private void Update()
     {
         if (Input.touchSupported)
         {
-            if (Input.touchCount > 0)
+            if (Input.touchCount > 0 && _currentInputDelay <= 0)
             {
                 var touch = Input.GetTouch(0);
 
@@ -32,12 +41,10 @@ public class PlayerController : MonoBehaviour
                     if (_selectedObj) MoveSelectedObject(touch);
                 }
 
-                /*else if(touch.phase == TouchPhase.Ended || touch.phase == TouchPhase.Canceled)
-                {
-                    if(_selectedObj) _selectedObj.Deselect();
-                    _selectedObj = null;
-                }*/
+                _currentInputDelay = inputDelay;
             }
+
+            _currentInputDelay -= Time.deltaTime;
         }
     }
 
@@ -55,11 +62,15 @@ public class PlayerController : MonoBehaviour
                     _selectedObj.RotateLeft();
                     return _selectedObj;
                 } 
-                else if (hit.transform.CompareTag("RightRotator"))
+                
+                if (hit.transform.CompareTag("RightRotator"))
                 {
                     _selectedObj.RotateRight();
                     return _selectedObj;
                 }
+
+                _selectedObj.Deselect();
+                _selectedObj = null;
             }
             
             var moveObj = hit.transform.parent.GetComponent<GridObject>();

@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     
     public GridObject chairPrefab;
 
+    public GameObject testSymbolPrefab;
+    
     private void Awake()
     {
         if (Instance)
@@ -61,12 +63,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void SpawnChairsWithValues(int[] values)
+    public void SpawnChair(int value, GameObject symbol)
     {
-        foreach (var value in values)
-        {
-            MovementGrid.Instance.SpawnOnRandomTile(chairPrefab, value);
-        }
+        var obj = (GridChair)MovementGrid.Instance.SpawnOnRandomTile(chairPrefab);
+        obj.SetValue(value);
+        Instantiate(symbol, obj.symbolParent);
     }
 
     public void SpawnChairs(int amount)
@@ -80,6 +81,11 @@ public class GameManager : MonoBehaviour
     IEnumerator Delay()
     {
         yield return new WaitForSecondsRealtime(.1f);
-        SpawnChairs(5);
+        //SpawnChairs(16);
+
+        for (int i = 0; i < 16; i++)
+        {
+            SpawnChair(10, testSymbolPrefab);
+        }
     }
 }

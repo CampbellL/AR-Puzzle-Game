@@ -616,36 +616,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 3991983246942545095, guid: b8c0d4d268d6923489a593713abcf0fb,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3991983246942545095, guid: b8c0d4d268d6923489a593713abcf0fb,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3991983246942545095, guid: b8c0d4d268d6923489a593713abcf0fb,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3991983246942545095, guid: b8c0d4d268d6923489a593713abcf0fb,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 3991983246942545095, guid: b8c0d4d268d6923489a593713abcf0fb,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 3991983246942545095, guid: b8c0d4d268d6923489a593713abcf0fb,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.02
-      objectReference: {fileID: 0}
     - target: {fileID: 4027520845728507819, guid: b8c0d4d268d6923489a593713abcf0fb,
         type: 3}
       propertyPath: m_IsActive
@@ -1219,6 +1189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da62bc568e4c0254ca6aecff2f330ea4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputDelay: 0.01
   selectableLayer:
     serializedVersion: 2
     m_Bits: 1024
@@ -1252,6 +1223,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chairPrefab: {fileID: 1039618048231845232, guid: 975dc53fe0f750e43b4917a392bad3ff,
+    type: 3}
+  testSymbolPrefab: {fileID: 8931980312108821281, guid: a37bb38c7f79e824792a44005c6ca068,
     type: 3}
 --- !u!1 &635004301
 GameObject:

@@ -38,7 +38,7 @@ public class MovementGrid : MonoBehaviour
         ApplyRandomDeskTemplate();
     }
 
-    public void SpawnOnRandomTile(GridObject obj, int value = 0)
+    public GridObject SpawnOnRandomTile(GridObject obj)
     {
         while (true)
         {
@@ -54,13 +54,12 @@ public class MovementGrid : MonoBehaviour
 
             GridObject spawnObj = Instantiate(obj, transform);
             spawnObj.transform.position = spawnPos;
-            spawnObj.SetValue(value);
-            
+
             var tile = randTile.GetComponent<GridTile>();
             tile.isOccupied = true;
             spawnObj.occupiedTile = tile;
 
-            break;
+            return spawnObj;
         }
     }
 
@@ -95,19 +94,16 @@ public class MovementGrid : MonoBehaviour
         Collider closest = null;
 
         Collider[] colliders = Physics.OverlapSphere(pos, 3f, snappableLayer);
-        
-        UiManager.Instance.debugText.text = colliders.Length.ToString();                    //debug
 
         if (colliders.Length > 0)
         {
-            closest = colliders[0];
-            var closestDistance = Vector3.Distance(pos, colliders[0].transform.position);
+            var closestDistance = 1000f;
 
             foreach (var collider1 in colliders)
             {
                 float currentDistance = Vector3.Distance(pos, collider1.transform.position);
                 
-                if (currentDistance < closestDistance)
+                if (currentDistance < closestDistance && !collider1.GetComponent<GridTile>().isOccupied)
                 {
                     closest = collider1;
                     closestDistance = currentDistance;
