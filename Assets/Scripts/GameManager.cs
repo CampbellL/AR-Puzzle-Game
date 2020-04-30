@@ -5,9 +5,11 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    
+
+    public bool isGameOver;
     public int[,] gridInfo;
     public Dictionary<int, GridDesk> desks;
+    public List<GridObject> gridObjects;
     
     public GridObject chairPrefab;
 
@@ -25,11 +27,45 @@ public class GameManager : MonoBehaviour
         }
         
         desks = new Dictionary<int, GridDesk>();
+        gridObjects = new List<GridObject>();
     }
 
     private void Start()
     {
         StartCoroutine(Delay());
+        StartCoroutine(Delay2());
+    }
+
+    public void StartNewGame()
+    {
+        ClearGridInfo();
+        MovementGrid.Instance.InitializeNewGridValues();
+        StartCoroutine(Delay()); //debug
+        isGameOver = false;
+    }
+
+    public void CheckWinCondition()
+    {
+        print(gridObjects.Count);
+        if (gridObjects.Count == 0)
+            EndGame();
+    }
+
+    private void EndGame()
+    {
+        UiManager.Instance.DisplayWinningScreen();
+        isGameOver = true;
+    }
+
+    private void ClearGridInfo()
+    {
+        foreach (GridObject obj in FindObjectsOfType<GridObject>())
+        {
+            Destroy(obj.gameObject);
+        }
+        
+        gridObjects = new List<GridObject>();
+        desks = new Dictionary<int, GridDesk>();
     }
 
     public void CreateGridInfoArray(int rows, int columns, Transform gridParent)
@@ -48,6 +84,7 @@ public class GameManager : MonoBehaviour
             }
 
             var tile = child.GetComponent<GridTile>();
+            tile.isOccupied = false;
             tile.tileRow = row;
             tile.tileColumn = column;
             
@@ -80,12 +117,19 @@ public class GameManager : MonoBehaviour
     
     IEnumerator Delay()
     {
+        //debug
         yield return new WaitForSecondsRealtime(.1f);
         //SpawnChairs(16);
 
-        for (int i = 0; i < 16; i++)
+        for (int i = 0; i < 8; i++)
         {
-            SpawnChair(10, testSymbolPrefab);
+            SpawnChair(0, testSymbolPrefab);
         }
+    }
+
+    IEnumerator Delay2()
+    {
+        yield return new WaitForSecondsRealtime(3f);
+        StartNewGame();
     }
 }

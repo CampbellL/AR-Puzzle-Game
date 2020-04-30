@@ -7,8 +7,9 @@ public class GridDesk : GridObject
     public int chairSpots;
     public TextMesh valueText;
 
-    private void Start()
+    protected override void Start()
     {
+        base.Start();
         GameManager.Instance.desks.Add(id, this);
     }
 
@@ -20,22 +21,31 @@ public class GridDesk : GridObject
 
     public override void Connect(GridObject other)
     {
-        Value -= other.Value;
+        SetValue(Value - other.Value);
 
         if (Value == 0)
         {
             base.Connect(other);
+            GameManager.Instance.gridObjects.Remove(this);
+            GameManager.Instance.CheckWinCondition();
+            print("remove desk");
         }
     }
 
     public override void Disconnect(GridObject other)
     {
-        Value += other.Value;
+        SetValue(Value + other.Value);
 
         if (Value != 0)
         {
             IsConnected = false;
             mesh.material.SetColor("_Color", Color.white);
+
+            if (!GameManager.Instance.gridObjects.Contains(this))
+            {
+                print("add desk");
+                GameManager.Instance.gridObjects.Add(this);
+            }
         }
     }
     

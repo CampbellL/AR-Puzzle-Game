@@ -8,8 +8,9 @@ public class GridChair : GridObject
     private bool _rotatorsActive;
     
     // Start is called before the first frame update
-    private void Start()
+    protected override void Start()
     {
+        base.Start();
         if(rotators) rotators.SetActive(false);
     }
 
@@ -24,6 +25,24 @@ public class GridChair : GridObject
 
             rotators.transform.rotation = Quaternion.Slerp(rotators.transform.rotation, lookRotation, Time.deltaTime * 5f);
         }
+    }
+
+    public override void Disconnect(GridObject other)
+    {
+        base.Disconnect(other);
+        if (!GameManager.Instance.gridObjects.Contains(this))
+        {
+            print("add chair");
+            GameManager.Instance.gridObjects.Add(this);
+        }
+    }
+
+    public override void Connect(GridObject other)
+    {
+        base.Connect(other);
+        GameManager.Instance.gridObjects.Remove(this);
+        print("remove chair");
+        GameManager.Instance.CheckWinCondition();
     }
 
     public override void Select()

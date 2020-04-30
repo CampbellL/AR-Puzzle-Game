@@ -34,6 +34,11 @@ public class MovementGrid : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+        InitializeNewGridValues();
+    }
+
+    public void InitializeNewGridValues()
+    {
         GameManager.Instance.CreateGridInfoArray(rows, columns, gridParent);
         ApplyRandomDeskTemplate();
     }
@@ -63,7 +68,7 @@ public class MovementGrid : MonoBehaviour
         }
     }
 
-    private void ApplyRandomDeskTemplate()
+    public void ApplyRandomDeskTemplate()
     {
         Instantiate(deskTemplates[Random.Range(0, deskTemplates.Length)], transform);
     }

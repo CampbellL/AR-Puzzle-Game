@@ -11,9 +11,6 @@ public class GridTile : MonoBehaviour
     public int tileRow;
     public int tileColumn;
 
-    public float markerFreeSize;
-    public float markerOccupiedSize;
-
     private void Start()
     {
         tileMarker.gameObject.SetActive(false);
@@ -33,10 +30,5 @@ public class GridTile : MonoBehaviour
     public void HideTile()
     {
         tileMarker.gameObject.SetActive(false);
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        
     }
 }

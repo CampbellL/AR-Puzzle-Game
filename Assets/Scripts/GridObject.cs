@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class GridObject : MonoBehaviour
 {
@@ -10,6 +11,12 @@ public class GridObject : MonoBehaviour
     public int Value { get; protected set; }
 
     protected bool IsConnected;
+
+    protected virtual void Start()
+    {
+        GameManager.Instance.gridObjects.Add(this);
+        print("object added");
+    }
 
     public void SnapToClosestFromTarget(Vector3 target)
     {
