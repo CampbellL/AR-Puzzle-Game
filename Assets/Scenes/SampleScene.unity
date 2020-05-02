@@ -1392,6 +1392,7 @@ GameObject:
   - component: {fileID: 423350975}
   - component: {fileID: 423350974}
   - component: {fileID: 423350976}
+  - component: {fileID: 423350977}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1444,10 +1445,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24f13db509e5cd94f8b8bfa711e25338, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isGameOver: 0
+  gridObjects: []
   chairPrefab: {fileID: 1039618048231845232, guid: 975dc53fe0f750e43b4917a392bad3ff,
     type: 3}
   testSymbolPrefab: {fileID: 8931980312108821281, guid: a37bb38c7f79e824792a44005c6ca068,
     type: 3}
+--- !u!114 &423350977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423350973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f1d64c1160b2174ba8f87f1724df5c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deskValues:
+  - id: 1
+    value: 7
+  - id: 2
+    value: 7
+  - id: 3
+    value: 16
+  - id: 4
+    value: 25
+  - id: 5
+    value: 18
+  - id: 6
+    value: 12
+  - id: 7
+    value: 9
+  - id: 8
+    value: 6
+  symbols:
+  - symbol: {fileID: 6893395238334677, guid: ffc452522db4d034bbe02d507a0525e5, type: 3}
+    value: 1
+    spawnAmount: 2
+  - symbol: {fileID: 545449604721440009, guid: ab0ae4df0f6738842854671d19c90139, type: 3}
+    value: 3
+    spawnAmount: 1
+  - symbol: {fileID: 533407345578711223, guid: 05955d8e24a24984486a8b4d8747cb11, type: 3}
+    value: 7
+    spawnAmount: 2
+  - symbol: {fileID: 8931980312108821281, guid: a37bb38c7f79e824792a44005c6ca068,
+      type: 3}
+    value: 6
+    spawnAmount: 6
+  - symbol: {fileID: 8931980312108821281, guid: 25bf9328e8617b94ebb8b56c192a8ba2,
+      type: 3}
+    value: 9
+    spawnAmount: 5
 --- !u!1 &635004301
 GameObject:
   m_ObjectHideFlags: 0

@@ -42,6 +42,8 @@ public class GameManager : MonoBehaviour
         MovementGrid.Instance.InitializeNewGridValues();
         StartCoroutine(Delay()); //debug
         isGameOver = false;
+        
+        //GetComponent<PuzzleGenerator>().SetupFixedPuzzle();
     }
 
     public void CheckWinCondition()
@@ -121,10 +123,12 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSecondsRealtime(.1f);
         //SpawnChairs(16);
 
-        for (int i = 0; i < 8; i++)
+        /*for (int i = 0; i < 8; i++)
         {
             SpawnChair(0, testSymbolPrefab);
-        }
+        }*/
+        
+        GetComponent<PuzzleGenerator>().SetupFixedPuzzle();
     }
 
     IEnumerator Delay2()
