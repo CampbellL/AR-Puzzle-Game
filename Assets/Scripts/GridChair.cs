@@ -6,12 +6,14 @@ public class GridChair : GridObject
     public GameObject rotators;
     
     private bool _rotatorsActive;
+    private Camera _mainCam;
     
     // Start is called before the first frame update
     protected override void Start()
     {
         base.Start();
         if(rotators) rotators.SetActive(false);
+        _mainCam = Camera.main;
     }
 
     // Update is called once per frame
@@ -19,7 +21,7 @@ public class GridChair : GridObject
     {
         if (_rotatorsActive)
         {
-            var lookPos = Camera.main.transform.position - rotators.transform.position;
+            var lookPos = _mainCam.transform.position - rotators.transform.position;
             lookPos.y = 0;
             var lookRotation = Quaternion.LookRotation(lookPos);
 
@@ -32,7 +34,6 @@ public class GridChair : GridObject
         base.Disconnect(other);
         if (!GameManager.Instance.gridObjects.Contains(this))
         {
-            print("add chair");
             GameManager.Instance.gridObjects.Add(this);
         }
     }
@@ -41,7 +42,6 @@ public class GridChair : GridObject
     {
         base.Connect(other);
         GameManager.Instance.gridObjects.Remove(this);
-        print("remove chair");
         GameManager.Instance.CheckWinCondition();
     }
 

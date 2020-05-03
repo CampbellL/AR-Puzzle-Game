@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class GridObject : MonoBehaviour
 {
@@ -11,11 +10,11 @@ public class GridObject : MonoBehaviour
     public int Value { get; protected set; }
 
     protected bool IsConnected;
+    private static readonly int ColorProperty = Shader.PropertyToID("_Color");
 
     protected virtual void Start()
     {
         GameManager.Instance.gridObjects.Add(this);
-        print("object added");
     }
 
     public void SnapToClosestFromTarget(Vector3 target)
@@ -27,9 +26,10 @@ public class GridObject : MonoBehaviour
         
         //move to next tile
         Transform closestTile = MovementGrid.Instance.GetClosestTileToPosition(target);
-        var ctLocalPosition = closestTile.position;
+        var ctLocalPosition = closestTile.localPosition;
+        ctLocalPosition += closestTile.parent.localPosition; //add the tile offset
         var transform1 = transform;
-        transform1.position = new Vector3(ctLocalPosition.x, transform1.position.y, ctLocalPosition.z);
+        transform1.localPosition = new Vector3(ctLocalPosition.x, transform1.localPosition.y, ctLocalPosition.z);
         
         //update occupied tile and hide it
         occupiedTile = closestTile.GetComponent<GridTile>();
@@ -43,29 +43,26 @@ public class GridObject : MonoBehaviour
         if(isMovable) 
             MovementGrid.Instance.ShowGrid();
         
-        mesh.material.SetColor("_Color", Color.red);
+        mesh.material.SetColor(ColorProperty, Color.red);
     }
 
     public virtual void Deselect()
     {
         MovementGrid.Instance.HideGrid();
-        
-        if(IsConnected)
-            mesh.material.SetColor("_Color", Color.green);
-        else
-            mesh.material.SetColor("_Color", Color.white);
+
+        mesh.material.SetColor(ColorProperty, IsConnected ? Color.green : Color.white);
     }
 
     public virtual void Connect(GridObject other)
     {
         IsConnected = true;
-        mesh.material.SetColor("_Color", Color.green);
+        mesh.material.SetColor(ColorProperty, Color.green);
     }
 
     public virtual void Disconnect(GridObject other)
     {
         IsConnected = false;
-        mesh.material.SetColor("_Color", Color.red);
+        mesh.material.SetColor(ColorProperty, Color.red);
     }
     
     public virtual void SetValue(int value)
@@ -75,13 +72,13 @@ public class GridObject : MonoBehaviour
     
     public void RotateLeft()
     {
-        //transform.Rotate(0, 90, 0);
-        transform.RotateAround(transform.position, transform.up, 90f);
+        var transform1 = transform;
+        transform.RotateAround(transform1.position, transform1.up, 90f);
     }
 
     public void RotateRight()
     {
-        //transform.Rotate(0, -90, 0);
-        transform.RotateAround(transform.position, transform.up, -90f);
+        var transform1 = transform;
+        transform.RotateAround(transform1.position, transform1.up, -90f);
     }
 }

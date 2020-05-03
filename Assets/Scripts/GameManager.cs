@@ -6,15 +6,13 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    public bool isGameOver;
+    [HideInInspector] public bool isGameOver;
     public int[,] gridInfo;
     public Dictionary<int, GridDesk> desks;
     public List<GridObject> gridObjects;
     
     public GridObject chairPrefab;
 
-    public GameObject testSymbolPrefab;
-    
     private void Awake()
     {
         if (Instance)
@@ -30,20 +28,12 @@ public class GameManager : MonoBehaviour
         gridObjects = new List<GridObject>();
     }
 
-    private void Start()
-    {
-        StartCoroutine(Delay());
-        StartCoroutine(Delay2());
-    }
-
     public void StartNewGame()
     {
         ClearGridInfo();
         MovementGrid.Instance.InitializeNewGridValues();
-        StartCoroutine(Delay()); //debug
+        StartCoroutine(Delay());
         isGameOver = false;
-        
-        //GetComponent<PuzzleGenerator>().SetupFixedPuzzle();
     }
 
     public void CheckWinCondition()
@@ -109,31 +99,9 @@ public class GameManager : MonoBehaviour
         Instantiate(symbol, obj.symbolParent);
     }
 
-    public void SpawnChairs(int amount)
+    private IEnumerator Delay()
     {
-        for (int i = 0; i < amount; i++)
-        {
-            MovementGrid.Instance.SpawnOnRandomTile(chairPrefab);
-        }
-    }
-    
-    IEnumerator Delay()
-    {
-        //debug
         yield return new WaitForSecondsRealtime(.1f);
-        //SpawnChairs(16);
-
-        /*for (int i = 0; i < 8; i++)
-        {
-            SpawnChair(0, testSymbolPrefab);
-        }*/
-        
         GetComponent<PuzzleGenerator>().SetupFixedPuzzle();
-    }
-
-    IEnumerator Delay2()
-    {
-        yield return new WaitForSecondsRealtime(3f);
-        StartNewGame();
     }
 }

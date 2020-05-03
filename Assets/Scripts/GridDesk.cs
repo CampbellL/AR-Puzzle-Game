@@ -1,11 +1,11 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class GridDesk : GridObject
 {
     public int id = 1;
-    public int chairSpots;
     public TextMesh valueText;
+    
+    private static readonly int ColorProperty = Shader.PropertyToID("_Color");
 
     protected override void Start()
     {
@@ -28,7 +28,6 @@ public class GridDesk : GridObject
             base.Connect(other);
             GameManager.Instance.gridObjects.Remove(this);
             GameManager.Instance.CheckWinCondition();
-            print("remove desk");
         }
     }
 
@@ -39,11 +38,10 @@ public class GridDesk : GridObject
         if (Value != 0)
         {
             IsConnected = false;
-            mesh.material.SetColor("_Color", Color.white);
+            mesh.material.SetColor(ColorProperty, Color.white);
 
             if (!GameManager.Instance.gridObjects.Contains(this))
             {
-                print("add desk");
                 GameManager.Instance.gridObjects.Add(this);
             }
         }

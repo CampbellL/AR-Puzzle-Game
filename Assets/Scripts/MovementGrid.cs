@@ -34,7 +34,7 @@ public class MovementGrid : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        InitializeNewGridValues();
+        GameManager.Instance.StartNewGame();
     }
 
     public void InitializeNewGridValues()
@@ -54,11 +54,12 @@ public class MovementGrid : MonoBehaviour
             
             SetRandomRotation(obj);
             
-            var spawnPos = randTile.position;
-            spawnPos.y = obj.transform.position.y;
+            var spawnPos = randTile.localPosition;
+            spawnPos += randTile.parent.localPosition; //add the offset of the tiles
+            spawnPos.y = obj.transform.localPosition.y;
 
             GridObject spawnObj = Instantiate(obj, transform);
-            spawnObj.transform.position = spawnPos;
+            spawnObj.transform.localPosition = spawnPos;
 
             var tile = randTile.GetComponent<GridTile>();
             tile.isOccupied = true;

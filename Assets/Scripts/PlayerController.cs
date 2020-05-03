@@ -9,10 +9,12 @@ public class PlayerController : MonoBehaviour
     
     private float _currentInputDelay;
     private GridObject _selectedObj;
+    private Camera _mainCam;
 
     private void Start()
     {
         _currentInputDelay = inputDelay;
+        _mainCam = Camera.main;
     }
 
     private void Update()
@@ -22,8 +24,6 @@ public class PlayerController : MonoBehaviour
             if (Input.touchCount > 0 && _currentInputDelay <= 0)
             {
                 var touch = Input.GetTouch(0);
-
-                UiManager.Instance.debugText.text = System.Enum.GetName(typeof(TouchPhase), touch.phase);
 
                 if (touch.phase == TouchPhase.Began)
                 {
@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour
 
     private GridObject GetSelectableObject(Touch touch)
     {
-        var touchPosRay = Camera.main.ScreenPointToRay(touch.position);
+        var touchPosRay = _mainCam.ScreenPointToRay(touch.position);
         bool hasHit = Physics.Raycast(touchPosRay, out var hit, selectableLayer);
 
         if (hasHit)
@@ -84,7 +84,7 @@ public class PlayerController : MonoBehaviour
 
     private void MoveSelectedObject(Touch touch)
     {
-        var touchPosRay = Camera.main.ScreenPointToRay(touch.position);
+        var touchPosRay = _mainCam.ScreenPointToRay(touch.position);
         bool hasHit = Physics.Raycast(touchPosRay, out var hit, movableLayer);
 
         if (hasHit)

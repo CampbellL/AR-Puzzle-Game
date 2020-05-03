@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class UiManager : MonoBehaviour
@@ -19,8 +16,7 @@ public class UiManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    public Text debugText;
+    
     public GameObject winningScreen;
     public Button restartButton;
 
@@ -34,9 +30,8 @@ public class UiManager : MonoBehaviour
         winningScreen.SetActive(true);
     }
 
-    public void RestartGame()
+    private void RestartGame()
     {
-        print("restart game!");
         winningScreen.SetActive(false);
         GameManager.Instance.StartNewGame();
     }
