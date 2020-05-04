@@ -305,8 +305,6 @@ MonoBehaviour:
   tileMarker: {fileID: 1462750913081747291}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &243073373683490508
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,8 +367,6 @@ MonoBehaviour:
   tileMarker: {fileID: 3683708528607827460}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &253828296920242749
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,8 +510,6 @@ MonoBehaviour:
   tileMarker: {fileID: 5331524362950183659}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &304372222085686853
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,8 +572,6 @@ MonoBehaviour:
   tileMarker: {fileID: 7270553557953351443}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &304917404369796403
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,8 +715,6 @@ MonoBehaviour:
   tileMarker: {fileID: 1273237297563232008}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &421252754502824398
 GameObject:
   m_ObjectHideFlags: 0
@@ -949,8 +939,6 @@ MonoBehaviour:
   tileMarker: {fileID: 5872135033295307255}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &505064769388222550
 GameObject:
   m_ObjectHideFlags: 0
@@ -1175,8 +1163,6 @@ MonoBehaviour:
   tileMarker: {fileID: 3587342891394063730}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &647409646649227209
 GameObject:
   m_ObjectHideFlags: 0
@@ -1306,8 +1292,8 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 649099228017155471}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -1399,8 +1385,6 @@ MonoBehaviour:
   tileMarker: {fileID: 8493657128262658197}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &685063641571017155
 GameObject:
   m_ObjectHideFlags: 0
@@ -1706,8 +1690,6 @@ MonoBehaviour:
   tileMarker: {fileID: 1028260010324597625}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &910272236483586996
 GameObject:
   m_ObjectHideFlags: 0
@@ -1770,8 +1752,6 @@ MonoBehaviour:
   tileMarker: {fileID: 6447988636055859824}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &951490767272177521
 GameObject:
   m_ObjectHideFlags: 0
@@ -1834,8 +1814,6 @@ MonoBehaviour:
   tileMarker: {fileID: 6142424364937013419}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &978739849941215425
 GameObject:
   m_ObjectHideFlags: 0
@@ -1898,8 +1876,6 @@ MonoBehaviour:
   tileMarker: {fileID: 553648706862504505}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &1121635681310741501
 GameObject:
   m_ObjectHideFlags: 0
@@ -1962,8 +1938,6 @@ MonoBehaviour:
   tileMarker: {fileID: 7266916033006477370}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &1129733433043792532
 GameObject:
   m_ObjectHideFlags: 0
@@ -2026,8 +2000,6 @@ MonoBehaviour:
   tileMarker: {fileID: 4904207441289173554}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &1137912201479736131
 GameObject:
   m_ObjectHideFlags: 0
@@ -2171,8 +2143,6 @@ MonoBehaviour:
   tileMarker: {fileID: 8812789927416388450}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &1143588628585161546
 GameObject:
   m_ObjectHideFlags: 0
@@ -2316,8 +2286,6 @@ MonoBehaviour:
   tileMarker: {fileID: 8985769719015583563}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &1396483102414022843
 GameObject:
   m_ObjectHideFlags: 0
@@ -2542,8 +2510,6 @@ MonoBehaviour:
   tileMarker: {fileID: 7096761674233634082}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &1508650310672470890
 GameObject:
   m_ObjectHideFlags: 0
@@ -2835,8 +2801,8 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1621464976972526744}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -3009,8 +2975,6 @@ MonoBehaviour:
   tileMarker: {fileID: 7304279497559932835}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &1655582402791541790
 GameObject:
   m_ObjectHideFlags: 0
@@ -3073,8 +3037,6 @@ MonoBehaviour:
   tileMarker: {fileID: 254482689226374859}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &1703444157129374433
 GameObject:
   m_ObjectHideFlags: 0
@@ -3137,8 +3099,6 @@ MonoBehaviour:
   tileMarker: {fileID: 7577636505602478460}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &1798317002677141471
 GameObject:
   m_ObjectHideFlags: 0
@@ -3201,8 +3161,6 @@ MonoBehaviour:
   tileMarker: {fileID: 537126637907046584}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &1827801675996006716
 GameObject:
   m_ObjectHideFlags: 0
@@ -3589,8 +3547,6 @@ MonoBehaviour:
   tileMarker: {fileID: 5687880659681688628}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &2149330953119114514
 GameObject:
   m_ObjectHideFlags: 0
@@ -4111,8 +4067,6 @@ MonoBehaviour:
   tileMarker: {fileID: 4623328128286003181}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &2359380651420372008
 GameObject:
   m_ObjectHideFlags: 0
@@ -4175,8 +4129,6 @@ MonoBehaviour:
   tileMarker: {fileID: 8003717922004936697}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &2363236688107621390
 GameObject:
   m_ObjectHideFlags: 0
@@ -4239,8 +4191,6 @@ MonoBehaviour:
   tileMarker: {fileID: 5284988073935495328}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &2366125019896585013
 GameObject:
   m_ObjectHideFlags: 0
@@ -4303,8 +4253,6 @@ MonoBehaviour:
   tileMarker: {fileID: 3028862962440401603}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &2381212423640522045
 GameObject:
   m_ObjectHideFlags: 0
@@ -4367,8 +4315,6 @@ MonoBehaviour:
   tileMarker: {fileID: 2408207708053236609}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &2467747536777966435
 GameObject:
   m_ObjectHideFlags: 0
@@ -4431,8 +4377,6 @@ MonoBehaviour:
   tileMarker: {fileID: 1406225546874417253}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &2493592169252869953
 GameObject:
   m_ObjectHideFlags: 0
@@ -4495,8 +4439,6 @@ MonoBehaviour:
   tileMarker: {fileID: 646497656662454837}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &2506891882310689016
 GameObject:
   m_ObjectHideFlags: 0
@@ -4640,8 +4582,6 @@ MonoBehaviour:
   tileMarker: {fileID: 8713151059197095542}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &2557579713331952870
 GameObject:
   m_ObjectHideFlags: 0
@@ -4704,8 +4644,6 @@ MonoBehaviour:
   tileMarker: {fileID: 44367956860682238}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &2599283282014800351
 GameObject:
   m_ObjectHideFlags: 0
@@ -5011,8 +4949,6 @@ MonoBehaviour:
   tileMarker: {fileID: 4329890448124877023}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &2666384433762609112
 GameObject:
   m_ObjectHideFlags: 0
@@ -5075,8 +5011,6 @@ MonoBehaviour:
   tileMarker: {fileID: 2225360455432196049}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &2685515193130050672
 GameObject:
   m_ObjectHideFlags: 0
@@ -5301,8 +5235,6 @@ MonoBehaviour:
   tileMarker: {fileID: 6538526061290825365}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &2901076149593186166
 GameObject:
   m_ObjectHideFlags: 0
@@ -5365,8 +5297,6 @@ MonoBehaviour:
   tileMarker: {fileID: 5676377829091384860}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &2911705843358558567
 GameObject:
   m_ObjectHideFlags: 0
@@ -5429,8 +5359,6 @@ MonoBehaviour:
   tileMarker: {fileID: 6808058611367513268}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &3005400610770065427
 GameObject:
   m_ObjectHideFlags: 0
@@ -5493,8 +5421,6 @@ MonoBehaviour:
   tileMarker: {fileID: 3841033665562818644}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &3022854307550397376
 GameObject:
   m_ObjectHideFlags: 0
@@ -5557,8 +5483,6 @@ MonoBehaviour:
   tileMarker: {fileID: 4079189272506031395}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &3048505677769465123
 GameObject:
   m_ObjectHideFlags: 0
@@ -5702,8 +5626,6 @@ MonoBehaviour:
   tileMarker: {fileID: 7265384444770206156}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &3164412618420434949
 GameObject:
   m_ObjectHideFlags: 0
@@ -5847,8 +5769,6 @@ MonoBehaviour:
   tileMarker: {fileID: 1730779339529098261}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &3204778068266597369
 GameObject:
   m_ObjectHideFlags: 0
@@ -5911,8 +5831,6 @@ MonoBehaviour:
   tileMarker: {fileID: 2385718032559184658}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &3442003247544178374
 GameObject:
   m_ObjectHideFlags: 0
@@ -5961,8 +5879,8 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3442003247544178374}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -6250,8 +6168,6 @@ MonoBehaviour:
   tileMarker: {fileID: 7476222351713663856}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &3703787962643168622
 GameObject:
   m_ObjectHideFlags: 0
@@ -6314,8 +6230,6 @@ MonoBehaviour:
   tileMarker: {fileID: 3440663171963584693}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &3724729045026942950
 GameObject:
   m_ObjectHideFlags: 0
@@ -6378,8 +6292,6 @@ MonoBehaviour:
   tileMarker: {fileID: 8489025845971749283}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &3733651701312548471
 GameObject:
   m_ObjectHideFlags: 0
@@ -6442,8 +6354,6 @@ MonoBehaviour:
   tileMarker: {fileID: 2687570143183526208}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &3748006381381231351
 GameObject:
   m_ObjectHideFlags: 0
@@ -6506,8 +6416,6 @@ MonoBehaviour:
   tileMarker: {fileID: 2414672953147200509}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &3822861739198046197
 GameObject:
   m_ObjectHideFlags: 0
@@ -6570,8 +6478,6 @@ MonoBehaviour:
   tileMarker: {fileID: 329453420176664036}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &3840527349269789073
 GameObject:
   m_ObjectHideFlags: 0
@@ -6715,8 +6621,6 @@ MonoBehaviour:
   tileMarker: {fileID: 2697931590271277584}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &3991983246942545091
 GameObject:
   m_ObjectHideFlags: 0
@@ -6744,7 +6648,7 @@ Transform:
   m_GameObject: {fileID: 3991983246942545091}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
+  m_LocalScale: {x: 0.025, y: 0.025, z: 0.025}
   m_Children:
   - {fileID: 8059228529524311359}
   - {fileID: 5468662757801852290}
@@ -7017,8 +6921,6 @@ MonoBehaviour:
   tileMarker: {fileID: 6921554732061399423}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &4097649965357302332
 GameObject:
   m_ObjectHideFlags: 0
@@ -7081,8 +6983,6 @@ MonoBehaviour:
   tileMarker: {fileID: 2546264637075226357}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &4100471473410561820
 GameObject:
   m_ObjectHideFlags: 0
@@ -7226,8 +7126,6 @@ MonoBehaviour:
   tileMarker: {fileID: 7922360286256708522}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &4262194769399405306
 GameObject:
   m_ObjectHideFlags: 0
@@ -7290,8 +7188,6 @@ MonoBehaviour:
   tileMarker: {fileID: 8560906446542406040}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &4359028623401820282
 GameObject:
   m_ObjectHideFlags: 0
@@ -7435,8 +7331,6 @@ MonoBehaviour:
   tileMarker: {fileID: 5000263358273966184}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &4474842822229693734
 GameObject:
   m_ObjectHideFlags: 0
@@ -7499,8 +7393,6 @@ MonoBehaviour:
   tileMarker: {fileID: 4093581273756630710}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &4519047252986039997
 GameObject:
   m_ObjectHideFlags: 0
@@ -7806,8 +7698,6 @@ MonoBehaviour:
   tileMarker: {fileID: 7283176753141815144}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &4672074830147287589
 GameObject:
   m_ObjectHideFlags: 0
@@ -7870,8 +7760,6 @@ MonoBehaviour:
   tileMarker: {fileID: 2503416724488394877}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &4720044000730041778
 GameObject:
   m_ObjectHideFlags: 0
@@ -8015,8 +7903,6 @@ MonoBehaviour:
   tileMarker: {fileID: 7336531014198621356}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &4783138151804511966
 GameObject:
   m_ObjectHideFlags: 0
@@ -8079,8 +7965,6 @@ MonoBehaviour:
   tileMarker: {fileID: 2060659686275601118}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &4813466131675776979
 GameObject:
   m_ObjectHideFlags: 0
@@ -8467,8 +8351,6 @@ MonoBehaviour:
   tileMarker: {fileID: 4859479580102824837}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &4948789448654425351
 GameObject:
   m_ObjectHideFlags: 0
@@ -8531,8 +8413,6 @@ MonoBehaviour:
   tileMarker: {fileID: 6002330457647019967}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &4964072132582441348
 GameObject:
   m_ObjectHideFlags: 0
@@ -8595,8 +8475,6 @@ MonoBehaviour:
   tileMarker: {fileID: 9093333294317672062}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &4971023126031880636
 GameObject:
   m_ObjectHideFlags: 0
@@ -8645,8 +8523,8 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4971023126031880636}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -8900,8 +8778,6 @@ MonoBehaviour:
   tileMarker: {fileID: 2844492095308530791}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &5204944215508132696
 GameObject:
   m_ObjectHideFlags: 0
@@ -9126,8 +9002,6 @@ MonoBehaviour:
   tileMarker: {fileID: 8974746430216802902}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &5259646088251862696
 GameObject:
   m_ObjectHideFlags: 0
@@ -9352,8 +9226,6 @@ MonoBehaviour:
   tileMarker: {fileID: 8947818430669161479}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &5343988289649944131
 GameObject:
   m_ObjectHideFlags: 0
@@ -9740,8 +9612,6 @@ MonoBehaviour:
   tileMarker: {fileID: 5672839320082360184}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &5633587518891420812
 GameObject:
   m_ObjectHideFlags: 0
@@ -9885,8 +9755,6 @@ MonoBehaviour:
   tileMarker: {fileID: 8413978977666067519}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &5768104735657032032
 GameObject:
   m_ObjectHideFlags: 0
@@ -9949,8 +9817,6 @@ MonoBehaviour:
   tileMarker: {fileID: 8021926482710375184}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &5827832190201217740
 GameObject:
   m_ObjectHideFlags: 0
@@ -10175,8 +10041,6 @@ MonoBehaviour:
   tileMarker: {fileID: 8572736550501214759}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &5907981550584114252
 GameObject:
   m_ObjectHideFlags: 0
@@ -10320,8 +10184,6 @@ MonoBehaviour:
   tileMarker: {fileID: 4829260872528623906}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &5919287663847778225
 GameObject:
   m_ObjectHideFlags: 0
@@ -10384,8 +10246,6 @@ MonoBehaviour:
   tileMarker: {fileID: 4426013377437839170}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &5963533921102555205
 GameObject:
   m_ObjectHideFlags: 0
@@ -10529,8 +10389,6 @@ MonoBehaviour:
   tileMarker: {fileID: 6733841921319993415}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &6015773176934552494
 GameObject:
   m_ObjectHideFlags: 0
@@ -10593,8 +10451,6 @@ MonoBehaviour:
   tileMarker: {fileID: 4151718873397718531}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &6143515616270891504
 GameObject:
   m_ObjectHideFlags: 0
@@ -10738,8 +10594,6 @@ MonoBehaviour:
   tileMarker: {fileID: 201537733522793714}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &6280783131720712524
 GameObject:
   m_ObjectHideFlags: 0
@@ -10802,8 +10656,6 @@ MonoBehaviour:
   tileMarker: {fileID: 6435212551622287743}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &6291499177189774900
 GameObject:
   m_ObjectHideFlags: 0
@@ -10852,8 +10704,8 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6291499177189774900}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -10945,8 +10797,6 @@ MonoBehaviour:
   tileMarker: {fileID: 5111395279968304316}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &6427047768945398669
 GameObject:
   m_ObjectHideFlags: 0
@@ -11171,8 +11021,6 @@ MonoBehaviour:
   tileMarker: {fileID: 3877004225128721423}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &6546517912509775209
 GameObject:
   m_ObjectHideFlags: 0
@@ -11397,8 +11245,6 @@ MonoBehaviour:
   tileMarker: {fileID: 4743292032043234013}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &6650196708981076604
 GameObject:
   m_ObjectHideFlags: 0
@@ -11461,8 +11307,6 @@ MonoBehaviour:
   tileMarker: {fileID: 936736939521967693}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &6716633223388828361
 GameObject:
   m_ObjectHideFlags: 0
@@ -11849,8 +11693,6 @@ MonoBehaviour:
   tileMarker: {fileID: 5360511743711292400}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &6862656734321963136
 GameObject:
   m_ObjectHideFlags: 0
@@ -11994,8 +11836,6 @@ MonoBehaviour:
   tileMarker: {fileID: 3425605702863810349}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &7024776898259850129
 GameObject:
   m_ObjectHideFlags: 0
@@ -12058,8 +11898,6 @@ MonoBehaviour:
   tileMarker: {fileID: 2906726356873096398}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &7045437921067877687
 GameObject:
   m_ObjectHideFlags: 0
@@ -12122,8 +11960,6 @@ MonoBehaviour:
   tileMarker: {fileID: 7689779419656703877}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &7047853931603316549
 GameObject:
   m_ObjectHideFlags: 0
@@ -12186,8 +12022,6 @@ MonoBehaviour:
   tileMarker: {fileID: 4659539753189964281}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &7053915652930610429
 GameObject:
   m_ObjectHideFlags: 0
@@ -12574,8 +12408,6 @@ MonoBehaviour:
   tileMarker: {fileID: 8005186999550039811}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &7261377395943788252
 GameObject:
   m_ObjectHideFlags: 0
@@ -12684,8 +12516,6 @@ MonoBehaviour:
   tileMarker: {fileID: 7474084595393018161}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &7363157003363396115
 GameObject:
   m_ObjectHideFlags: 0
@@ -12748,8 +12578,6 @@ MonoBehaviour:
   tileMarker: {fileID: 6927113937325368188}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &7375578632291072970
 GameObject:
   m_ObjectHideFlags: 0
@@ -12812,8 +12640,6 @@ MonoBehaviour:
   tileMarker: {fileID: 1831115570929546094}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &7377800063959941869
 GameObject:
   m_ObjectHideFlags: 0
@@ -12957,8 +12783,6 @@ MonoBehaviour:
   tileMarker: {fileID: 608766554323173621}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &7493600342543865589
 GameObject:
   m_ObjectHideFlags: 0
@@ -13264,8 +13088,6 @@ MonoBehaviour:
   tileMarker: {fileID: 7333122571914811731}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &7659488654231548561
 GameObject:
   m_ObjectHideFlags: 0
@@ -13490,8 +13312,6 @@ MonoBehaviour:
   tileMarker: {fileID: 5060810538799328083}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &7816675162905869492
 GameObject:
   m_ObjectHideFlags: 0
@@ -13554,8 +13374,6 @@ MonoBehaviour:
   tileMarker: {fileID: 7912711093355303473}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &7816820905253416622
 GameObject:
   m_ObjectHideFlags: 0
@@ -13618,8 +13436,6 @@ MonoBehaviour:
   tileMarker: {fileID: 5628411851812231698}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &8021205377475756248
 GameObject:
   m_ObjectHideFlags: 0
@@ -13763,8 +13579,6 @@ MonoBehaviour:
   tileMarker: {fileID: 3298580903461237841}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &8025336772471755493
 GameObject:
   m_ObjectHideFlags: 0
@@ -13908,8 +13722,6 @@ MonoBehaviour:
   tileMarker: {fileID: 5839012767643032674}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &8210237839154125974
 GameObject:
   m_ObjectHideFlags: 0
@@ -14053,8 +13865,6 @@ MonoBehaviour:
   tileMarker: {fileID: 9206935952687981082}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &8288190305475954778
 GameObject:
   m_ObjectHideFlags: 0
@@ -14198,8 +14008,6 @@ MonoBehaviour:
   tileMarker: {fileID: 1451028541809309487}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &8333441834264076406
 GameObject:
   m_ObjectHideFlags: 0
@@ -14262,8 +14070,6 @@ MonoBehaviour:
   tileMarker: {fileID: 6368257658290354536}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &8339126138726963471
 GameObject:
   m_ObjectHideFlags: 0
@@ -14407,8 +14213,6 @@ MonoBehaviour:
   tileMarker: {fileID: 5341603097997259458}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &8386367575770459703
 GameObject:
   m_ObjectHideFlags: 0
@@ -14795,8 +14599,6 @@ MonoBehaviour:
   tileMarker: {fileID: 3357172340761245597}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &8550084365054869343
 GameObject:
   m_ObjectHideFlags: 0
@@ -15021,8 +14823,6 @@ MonoBehaviour:
   tileMarker: {fileID: 2426232168850858494}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &8620849187787002516
 GameObject:
   m_ObjectHideFlags: 0
@@ -15328,8 +15128,6 @@ MonoBehaviour:
   tileMarker: {fileID: 426580713779997256}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &8795500666787724580
 GameObject:
   m_ObjectHideFlags: 0
@@ -15392,8 +15190,6 @@ MonoBehaviour:
   tileMarker: {fileID: 109372618005686218}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &8916678710563435592
 GameObject:
   m_ObjectHideFlags: 0
@@ -15537,8 +15333,6 @@ MonoBehaviour:
   tileMarker: {fileID: 1841283869764918672}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &9072273172747309553
 GameObject:
   m_ObjectHideFlags: 0
@@ -15587,8 +15381,8 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9072273172747309553}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -15680,8 +15474,6 @@ MonoBehaviour:
   tileMarker: {fileID: 2818507484357815014}
   tileRow: 0
   tileColumn: 0
-  markerFreeSize: 0
-  markerOccupiedSize: 0
 --- !u!1 &9121458426507238613
 GameObject:
   m_ObjectHideFlags: 0
