@@ -23,6 +23,7 @@ public class GridObject : MonoBehaviour
         
         //visualize tile your standing on
         occupiedTile.ShowTile();
+        occupiedTile.isOccupied = false;
         
         //move to next tile
         Transform closestTile = MovementGrid.Instance.GetClosestTileToPosition(target);
